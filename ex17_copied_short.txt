@@ -1,0 +1,3 @@
+Hi this is Sriram
+I had given space after every new line
+and that affected the alignment
