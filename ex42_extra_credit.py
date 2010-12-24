@@ -1,8 +1,8 @@
 class Engine:
 
-	def __init__(self, map):
+	def __init__(self, map, start):
 		self.map = map
-		self.start = map.start
+		self.start = start
 
 	def play(self):
 		next = self.start
@@ -15,13 +15,12 @@ class Engine:
 
 class Map:
 
-	def __init__(self, start):
+	def __init__(self):
 		self.quips = ["You died. You kinda suck at this.", 
 					  "Your mom would be proud. If she were smarter.",
 					  "Such a loser.",
 					  "I have a small puppy that's better at this."		
 				     ]
-		self.start = start
 
 
 	def death(self):
@@ -141,4 +140,5 @@ class Map:
 	
 
 
-Engine(Map('princess_lives_here')).play()
+Engine(Map(), 'princess_lives_here').play()
+
