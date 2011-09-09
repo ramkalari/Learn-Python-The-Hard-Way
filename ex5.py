@@ -1,31 +1,23 @@
-name = 'Sriram  Balasubramanian'
-age = 34 # not a lie
-height = 65 # inches
-weight = 158 # pounds
-eyes = 'Brown'
-teeth = 'White'
+name = 'Sriram'
+age = 35
+height = 167
+weight = 62
+eyes = 'black'
+teeth = 'white'
 hair = 'Black'
 
-height_in_cms= 2.54 * height
-weight_in_kgs = 0.454 * weight 
-
 print "Let's talk about %s." % name
-print "He is %d inches tall" % height
-print "He is %d lbs heavy" % weight
+print "He's %d cms tall." % height
+print "He's %d pounds heavy." % weight
 print "Actually that's not too heavy."
 print "He's got %s eyes and %s hair" % (eyes, hair)
 print "His teeth are usually %s depending on the coffee." % teeth
 
-# this line is tricky, try to get it exactly right
-print "If I add %d, %d and %d I get %d." % (age, height, weight, age + height + weight)
+print "If I add %d, %d, and %d I get %d." % (age, height, weight, age + height + weight)
 
-print  "I want to print %r irrespective of what type it is" % age
+height_in_inches = height / 2.54
+weight_in_pounds = weight * 2.2
 
-print "My weight in kgs is %d" % weight_in_kgs
-print "My height in cms is %d" % height_in_cms
-
-# Common mistakes:forgetting the % character before the variable name and adding a , between the string and the % character
-
-
+print "Height in inches is %d, and weight in pounds is %d." % (height_in_inches, weight_in_pounds)
 
 
