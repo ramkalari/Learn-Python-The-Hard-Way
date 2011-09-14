@@ -1,22 +1,22 @@
-# This one is like your scripts with argv
+# this one is like scripts with argv
 def print_two(*args):
-	arg1, arg2 = args
-	print "arg1: %r arg2: %r" % (arg1,arg2)
+    arg1, arg2 = args
+    print "arg1: %r, arg2: %r" % (arg1, arg2)
 
-#ok, that *args is actually pointless, we can do just this
+# ok, that args is actually pointless, we can do just this
 def print_two_again(arg1, arg2):
-	print "arg1: %r arg2: %r" % (arg1, arg2)
+    print "arg1: %r arg2: %r" % (arg1, arg2)
 
-# this takes just one argument
+# this just takes one argument
 def print_one(arg1):
-	print "arg1: %r" % arg1
+    print "arg1: %r" %arg1
 
 # this one takes no arguments
 def print_none():
-	print "I got nothin."
+    print "i got nothing"
 
-print_two("Sriram", "Balasubramanian")
-print_two_again("Sriram", "Balasubramanian")
+print_two("Sriram", "B")
+print_two_again("Sriram", "B")
 print_one("First!")
 print_none()
-	
+

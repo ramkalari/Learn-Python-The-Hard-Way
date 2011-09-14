@@ -1,4 +1,5 @@
-age = raw_input("What's your age? ")
-gender = raw_input("What's your gender? ")
-occupation = raw_input ("What's your occupation? ")
-print "You are %r years old, your sex is %r and your occupation is %r" %(age, gender, occupation)
+age = raw_input("How old are you?")
+height = raw_input("How tall are you?")
+weight = raw_input("How much do you weigh?")
+
+print "So, you're %r old, %r tall and %r heavy." % (age, height, weight)
