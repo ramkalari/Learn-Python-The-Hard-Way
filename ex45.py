@@ -1,127 +1,77 @@
-## Animal is-a object.
 class Animal(object):
-	
-	def is_mammal(self):
-		pass
+    pass
 
-## Dog is-a Animal
+# Dog is an animal
 class Dog(Animal):
-	
-	def __init__(self, name):
-		## Dog has-a name
-		self.name = name
 
-	def is_mammal(self):
-		return True
+    def __init__(self, name):
+        ## Dog has a name
+        self.name = name
 
-	def print_name(self):
-		print self.name
-
-
-## Cat is-a animal
+# Cat is an animal
 class Cat(Animal):
-	
-	def __init__(self, name):
-		## Cat has-a name
-		self.name = name
 
-	def is_mammal():
-		return True
+    def __init__(self, name):
+       ## Cat has a name
+       self.name = name
 
-
-
-## Person is-a Object
+# Person is a object
 class Person(object):
-	
-	def __init__(self, name):
-		## Person has-a name
-		self.name = name
-		## Person has-a pet of some kind	
-		self.pet = None
-		## Person has-many children
-		self.children = []
-	
 
-	def is_male():
-		pass
+    def __init__(self, name):
+        # Person has a name
+        self.name = name
+        # Person has a pet
+        self.pet = None
 
-	def add_child(self, child):
-		self.children.append(child)
-
-
-## Employee is-a person
+# Employee is a person
 class Employee(Person):
-	
-	def __init__(self, name, salary):
-		
-		super(Employee, self).__init__(name)
-		## Employee has-a salary
-		self.salary = salary
 
-	def is_male():
-		pass	
+    def __init__(self, name, salary):
+        super(Employee, self).__init__(name)
+        # Employee has a salary
+        self.salary = salary
 
-
-class Child(Person):
-	pass
-	
-## Fish is-a object 
+# Fish is an object
 class Fish(object):
-
-	def is_amphibian():
-		return False
+    pass
 
 
-## Salmon is-a fish
+# Salmon is a Fish
 class Salmon(Fish):
-	
-	def is_tasty():
-		return True
+    pass
 
-## Halibut is-a fish
+# Halibut is a fish
 class Halibut(Fish):
-	
-	def is_tasty():
-		return False
+    pass
 
-## rover is-a Dog
+
+# rover is a Dog
 rover = Dog("Rover")
 
-## satan is-a cat
-satan = Cat("satan")
+# Satan is a Cat
+satan = Cat("Satan")
 
-## mary is-a person
+# mary is a person
 mary = Person("Mary")
 
-## mary has-a pet which is-a satan
+# mary has a pet called satan which is a cat
 mary.pet = satan
 
-## frank is-a Employee who has-a salary of 120000
+# Frank is an employee
 frank = Employee("Frank", 120000)
 
-## frank has a pet which is-a rover
+# frank has a pet called rover which is a dog
 frank.pet = rover
 
-## flipper is-a fish
+# flipper is a fish
 flipper = Fish()
 
-## Crouse is-a Salmon
+# crouse is a salmon
 crouse = Salmon()
 
-## harry is-a Halibut
+# harry is a Halibut
 harry = Halibut()
 
 
-Dog.name = "We are all dogs"
 
-print Dog.name
-alsatian = Dog("Alsatian")
-print alsatian.name
-
-print rover.is_mammal()
-rover.print_name()
-
-frank.add_child(mary)
-
-for child in frank.children:
-	print child.name
