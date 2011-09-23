@@ -1,0 +1,9 @@
+setup.py
+edu_decorators/__init__.py
+edu_decorators/edu_dec.py
+edu_decorators/test_edu.py
+edupy.egg-info/PKG-INFO
+edupy.egg-info/SOURCES.txt
+edupy.egg-info/dependency_links.txt
+edupy.egg-info/requires.txt
+edupy.egg-info/top_level.txt
